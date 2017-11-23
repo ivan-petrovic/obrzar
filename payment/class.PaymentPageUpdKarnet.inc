@@ -17,8 +17,8 @@ class PaymentUpdateKarnet extends PaymentPage implements RenderHTML {
       // var_dump($payment);
       // exit();
       KarnetDB::updateCena($this->pid, $payment->getValue('tipCenaRada'), $payment->getValue('cenaRada'));
-      // $adr  = "Location: http://" . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::LIST_PAYMENT;
-      $adr  = "Location: http://" . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
+      // $adr  = "Location: " . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::LIST_PAYMENT;
+      $adr  = "Location: " . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
       $adr .= "&paymentID=" . $this->pid;
       header($adr);
       exit;

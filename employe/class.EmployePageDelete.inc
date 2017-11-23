@@ -12,7 +12,7 @@ class EmployeDelete extends EmployePage implements RenderHTML {
 
    public function execute() {
       EmployeDB::delete($this->eid);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/employe.php?opID=" . EmployePageDispatcher::LIST_EMPLOYE;
+      $adr  = "Location: " . Application::getServerAddress() . "/employe.php?opID=" . EmployePageDispatcher::LIST_EMPLOYE;
       header($adr);
       exit;
    }

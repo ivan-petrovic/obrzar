@@ -56,7 +56,7 @@ class FirmUpdate extends FirmPage implements RenderHTML {
    protected function save(Firm $firm) {
       $fid = $firm->getValue('id');
       FirmDB::update($firm);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::DETAILS_FIRM;
+      $adr  = "Location: " . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::DETAILS_FIRM;
       $adr .= "&firmID=" . $fid;
       header($adr);
       exit;

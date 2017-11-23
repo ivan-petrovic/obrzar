@@ -55,7 +55,7 @@ class FirmNew extends FirmPage implements RenderHTML {
    
    protected function save(Firm $firm) {
       $rez = FirmDB::insert($firm); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://" . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::DETAILS_FIRM;
+      $adr  = "Location: " . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::DETAILS_FIRM;
       $adr .= "&firmID=" . $rez[0];
       header($adr);
       exit;

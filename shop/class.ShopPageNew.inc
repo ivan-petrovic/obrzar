@@ -55,7 +55,7 @@ class ShopNew extends ShopPage implements RenderHTML {
    
    protected function save(Shop $shop) {
       $rez = ShopDB::insert($shop); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://" . Application::getServerAddress() . "/shop.php?opID=" . ShopPageDispatcher::DETAILS_SHOP;
+      $adr  = "Location: " . Application::getServerAddress() . "/shop.php?opID=" . ShopPageDispatcher::DETAILS_SHOP;
       $adr .= "&shopID=" . $rez[0];
       header($adr);
       exit;

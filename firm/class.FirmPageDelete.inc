@@ -12,7 +12,7 @@ class FirmDelete extends FirmPage implements RenderHTML {
    
    public function execute() {
       FirmDB::delete($this->fid);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::LIST_FIRM;
+      $adr  = "Location: " . Application::getServerAddress() . "/firm.php?opID=" . FirmPageDispatcher::LIST_FIRM;
       header($adr);
       exit;
    }

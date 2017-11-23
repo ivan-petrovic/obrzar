@@ -102,8 +102,6 @@ class Application {
    }
    
    static public function getServerAddress() {
-      // return "localhost:8081;
-      // return "cepbep:8081;
       // return "localhost";
       // return "st3";
        return "https://quiet-sierra-71458.herokuapp.com";

@@ -56,7 +56,7 @@ class ShopUpdate extends ShopPage implements RenderHTML {
    protected function save(Shop $shop) {
       $sid = $shop->getValue('id');
       ShopDB::update($shop);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/shop.php?opID=" . ShopPageDispatcher::DETAILS_SHOP;
+      $adr  = "Location: " . Application::getServerAddress() . "/shop.php?opID=" . ShopPageDispatcher::DETAILS_SHOP;
       $adr .= "&shopID=" . $sid;
       header($adr);
       exit;

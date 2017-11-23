@@ -81,7 +81,7 @@ class KarnetPageOstalo extends KarnetPage implements RenderHTML {
       $this->message .= "<p>Нето за боловање преко 30 дана: " . $ko->getValue('iznosNeto30') . "</p>";
       $this->message .= "<p>ПИО за боловање преко 30 дана: " . $ko->getValue('iznosPIO30') . "</p>";
       $this->message .= "<p></p>";
-      // $adr  = "Location: http://" . Application::getServerAddress() . "/karnet.php?opID=" . KarnetPageDispatcher::OSTALO_KARNET;
+      // $adr  = "Location: " . Application::getServerAddress() . "/karnet.php?opID=" . KarnetPageDispatcher::OSTALO_KARNET;
       // $adr .= "&employeID=" . $eid;
      
       // header($adr);
