@@ -11,7 +11,7 @@ Ulaz u aplikaciju je fajl index.php
 
 ## Demo
 
-Demo aplikacije na Heroku je [ovde](https://vast-spire-24114.herokuapp.com/)
+Demo aplikacije na Heroku je [ovde](https://quiet-sierra-71458.herokuapp.com/)
 
 ## Author
 

@@ -57,7 +57,7 @@ class PaymentUpdate extends PaymentPage implements RenderHTML {
    protected function save(Payment $payment) {
       $pid = $payment->getValue('id');
       PaymentDB::update($payment);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
       $adr .= "&paymentID=" . $pid;
       header($adr);
       exit;

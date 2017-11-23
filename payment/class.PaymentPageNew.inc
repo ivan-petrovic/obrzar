@@ -55,7 +55,7 @@ class PaymentNew extends PaymentPage implements RenderHTML {
 
    protected function save(Payment $payment) {
       $rez = PaymentDB::insert($payment); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::DETAILS_PAYMENT;
       $adr .= "&paymentID=" . $rez[0];
       header($adr);
       exit;

@@ -55,7 +55,7 @@ class BankNew extends BankPage implements RenderHTML {
    
    protected function save(Bank $bank) {
       $rez = BankDB::insert($bank); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/bank.php?opID=" . BankPageDispatcher::DETAILS_BANK;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/bank.php?opID=" . BankPageDispatcher::DETAILS_BANK;
       $adr .= "&bankID=" . $rez[0];
       header($adr);
       exit;

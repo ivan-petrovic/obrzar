@@ -12,7 +12,7 @@ class BankDelete extends BankPage implements RenderHTML {
 
    public function execute() {
       BankDB::delete($this->bid);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/bank.php?opID=" . BankPageDispatcher::LIST_BANK;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/bank.php?opID=" . BankPageDispatcher::LIST_BANK;
       header($adr);
       exit;
    }

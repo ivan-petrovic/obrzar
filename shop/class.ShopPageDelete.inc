@@ -12,7 +12,7 @@ class ShopDelete extends ShopPage implements RenderHTML {
    
    public function execute() {
       ShopDB::delete($this->sid);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/shop.php?opID=" . ShopPageDispatcher::LIST_SHOP;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/shop.php?opID=" . ShopPageDispatcher::LIST_SHOP;
       header($adr);
       exit;
    }

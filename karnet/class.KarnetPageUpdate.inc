@@ -61,7 +61,7 @@ class KarnetUpdate extends KarnetPage implements RenderHTML {
       $eid = $karnet->getValue('zaposleniID');
       // echo $eid; exit();
       KarnetDB::update($karnet);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/karnet.php?opID=" . KarnetPageDispatcher::DETAILS_PRINT;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/karnet.php?opID=" . KarnetPageDispatcher::DETAILS_PRINT;
       $adr .= "&employeID=" . $eid;
       header($adr);
       exit;

@@ -13,7 +13,7 @@ class KarnetDelete extends KarnetPage implements RenderHTML {
 
    public function execute() {
       KarnetDB::delete($this->eid, $this->pid);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/karnet.php?opID=" . KarnetPageDispatcher::LIST_KARNET;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/karnet.php?opID=" . KarnetPageDispatcher::LIST_KARNET;
       header($adr);
       exit;
    }

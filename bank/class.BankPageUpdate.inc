@@ -56,7 +56,7 @@ class BankUpdate extends BankPage implements RenderHTML {
    protected function save(Bank $bank) {
       $bid = $bank->getValue('id');
       BankDB::update($bank);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/bank.php?opID=" . BankPageDispatcher::DETAILS_BANK;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/bank.php?opID=" . BankPageDispatcher::DETAILS_BANK;
       $adr .= "&bankID=" . $bid;
       header($adr);
       exit;

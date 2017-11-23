@@ -24,7 +24,16 @@ class DB {
     * Constructor.
     */
    private function __construct() {
-      $this->_connection = new mysqli('localhost', 'root', 'ivan', 'oz');
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+
+        $this->_connection = new mysqli($server, $username, $password, $db);
+       
+      // $this->_connection = new mysqli('localhost', 'root', 'ivan', 'oz');
       // Error handling.
       if (mysqli_connect_error()) {
          trigger_error('Failed to connect to MySQL: ' . mysqli_connect_error(), E_USER_ERROR);

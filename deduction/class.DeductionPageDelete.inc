@@ -22,7 +22,7 @@ class DeductionDelete extends DeductionPage implements RenderHTML {
    
    public function execute() {
       DeductionDB::delete($this->did);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/deduction.php";
+      $adr  = "Location: http://" . Application::getServerAddress() . "/deduction.php";
       header($adr);
       exit;
    }

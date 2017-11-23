@@ -55,7 +55,7 @@ class EmployeNew extends EmployePage implements RenderHTML {
 
    protected function save(Employe $employe) {
       $rez = EmployeDB::insert($employe); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/employe.php?opID=" . EmployePageDispatcher::DETAILS_EMPLOYE;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/employe.php?opID=" . EmployePageDispatcher::DETAILS_EMPLOYE;
       $adr .= "&employeID=" . $rez[0];
       header($adr);
       exit;

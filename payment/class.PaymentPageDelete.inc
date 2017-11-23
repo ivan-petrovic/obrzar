@@ -22,7 +22,7 @@ class PaymentDelete extends PaymentPage implements RenderHTML {
 
 //   public function execute() {
 //      PaymentDB::delete($this->pid);
-//      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/payment.php?opID=" . PaymentPageDispatcher::LIST_PAYMENT;
+//      $adr  = "Location: http://" . Application::getServerAddress() . "/payment.php?opID=" . PaymentPageDispatcher::LIST_PAYMENT;
 //      header($adr);
 //      exit;
 //   }

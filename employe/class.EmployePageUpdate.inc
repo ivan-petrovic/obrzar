@@ -56,7 +56,7 @@ class EmployeUpdate extends EmployePage implements RenderHTML {
    protected function save(Employe $employe) {
       $eid = $employe->getValue('id');
       EmployeDB::update($employe);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/employe.php?opID=" . EmployePageDispatcher::DETAILS_EMPLOYE;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/employe.php?opID=" . EmployePageDispatcher::DETAILS_EMPLOYE;
       $adr .= "&employeID=" . $eid;
       header($adr);
       exit;

@@ -97,7 +97,7 @@ class KarnetNew extends KarnetPage implements RenderHTML {
       }
       
       // KarnetDB::insert($karnet);
-      $adr  = "Location: http://" . Application::getServerAddress() . "/oz/karnet.php?opID=" . KarnetPageDispatcher::DETAILS_PRINT;
+      $adr  = "Location: http://" . Application::getServerAddress() . "/karnet.php?opID=" . KarnetPageDispatcher::DETAILS_PRINT;
       $adr .= "&employeID=" . $eid;
      
       header($adr);
