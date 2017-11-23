@@ -1,0 +1,368 @@
+div.virman {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   width: 950px;
+   height: 430px;
+   /* background-image:url('nalog02.jpg'); */
+   /* background-size: 100%; */
+   /* border: 1px solid red; */
+   border-bottom: 1px solid red;
+   margin-bottom: 5px;
+}
+.nalog-opis {
+   position: absolute;
+   right: 7px;
+   top: 0;
+   margin: 0;
+   padding: 0;
+   font-size: 130%;
+   font-weight: bold;
+}
+.duznik-opis {
+   position: absolute;
+   left: 7px;
+   top: 17px;
+   margin: 0;
+   padding: 0;
+   width: 422px;
+}
+.duznik {
+   position: absolute;
+   left: 7px;
+   top: 37px;
+   width: 422px;
+   height: 54px;
+   border: 1px solid red;
+}
+.svrha-opis {
+   position: absolute;
+   left: 7px;
+   top: 113px;
+   margin: 0;
+   padding: 0;
+   width: 422px;
+}
+.svrha {
+   position: absolute;
+   left: 7px;
+   top: 133px;
+   width: 422px;
+   height: 54px;
+   border: 1px solid red;
+}
+.poverilac-opis {
+   position: absolute;
+   left: 7px;
+   top: 207px;
+   margin: 0;
+   padding: 0;
+   width: 422px;
+}
+.poverilac {
+   position: absolute;
+   left: 7px;
+   top: 227px;
+   width: 422px;
+   height: 54px;
+   border: 1px solid red;
+}
+.pecat_potpis {
+   font-size: 80%;
+   position: absolute;
+   left: 7px;
+   top: 333px;
+   width: 255px;
+   border-top: 1px solid red;
+   padding-top: 0;
+}
+.mesto_datum {
+   font-size: 80%;
+   position: absolute;
+   left: 200px;
+   top: 343px;
+   width: 235px;
+}
+.mesto_datum-opis {
+   position: absolute;
+   left: 200px;
+   top: 370px;
+   margin: 0;
+   padding: 0;
+   width: 235px;
+   border-top: 1px solid red;   
+}
+.sifra_placanja-opis {
+   position: absolute;
+   left: 520px;
+   top: 22px;
+   margin: 0;
+   padding: 0;
+   width: 35px;
+}
+.sifra_placanja {
+   position: absolute;
+   left: 520px;
+   top: 63px;
+   padding: 5px 0 0 5px;
+   width: 53px;
+   height: 24px;
+   border: 1px solid red;
+}
+.valuta-opis {
+   position: absolute;
+   left: 600px;
+   top: 42px;
+   margin: 0;
+   padding: 0;
+   width: 35px;
+}
+.valuta {
+   position: absolute;
+   left: 600px;
+   top: 63px;
+   padding: 5px 0 0 5px;
+   width: 53px;
+   height: 24px;
+   border: 1px solid red;
+}
+.iznos-opis {
+   position: absolute;
+   left: 700px;
+   top: 42px;
+   margin: 0;
+   padding: 0;
+   width: 220px;
+}
+.iznos {
+   position: absolute;
+   left: 700px;
+   top: 62px;
+   padding: 5px 0 0 5px;   
+   width: 210px;
+   height: 24px;
+   border: 1px solid red;
+}
+.racun_duznika-opis {
+   position: absolute;
+   left: 600px;
+   top: 101px;
+   margin: 0;
+   padding: 0;
+   width: 220px;
+}
+.racun_duznika {
+   position: absolute;
+   left: 600px;
+   top: 121px;
+   padding: 5px 0 0 5px;   
+   width: 311px;
+   height: 24px;
+   border: 1px solid red;
+}
+.broj_modela1-opis {
+   position: absolute;
+   left: 520px;
+   top: 142px;
+   margin: 0;
+   padding: 0;
+   width: 35px;
+}
+.broj_modela1 {
+   position: absolute;
+   left: 520px;
+   top: 180px;
+   padding: 5px 0 0 5px;
+   width: 53px;
+   height: 24px;
+   border: 1px solid red;
+}
+.poziv_na_broj1-opis {
+   position: absolute;
+   left: 600px;
+   top: 160px;
+   margin: 0;
+   padding: 0;
+   width: 220px;
+}
+.poziv_na_broj1 {
+   position: absolute;
+   left: 600px;
+   top: 180px;
+   padding: 5px 0 0 5px;   
+   width: 311px;
+   height: 24px;
+   border: 1px solid red;
+}
+.racun_poverioca-opis {
+   position: absolute;
+   left: 600px;
+   top: 219px;
+   margin: 0;
+   padding: 0;
+   width: 230px;
+}
+.racun_poverioca {
+   position: absolute;
+   left: 600px;
+   top: 239px;
+   padding: 5px 0 0 5px;   
+   width: 311px;
+   height: 24px;
+   border: 1px solid red;
+}
+.broj_modela2-opis {
+   position: absolute;
+   left: 520px;
+   top: 260px;
+   margin: 0;
+   padding: 0;
+   width: 35px;
+}
+.broj_modela2 {
+   position: absolute;
+   left: 520px;
+   top: 298px;
+   padding: 5px 0 0 5px;
+   width: 53px;
+   height: 24px;
+   border: 1px solid red;
+}
+.poziv_na_broj2-opis {
+   position: absolute;
+   left: 600px;
+   top: 278px;
+   margin: 0;
+   padding: 0;
+   width: 230px;
+}
+.poziv_na_broj2 {
+   position: absolute;
+   left: 600px;
+   top: 298px;
+   padding: 5px 0 0 5px;
+   width: 311px;
+   height: 24px;
+   border: 1px solid red;
+}
+.datum_valute {
+   font-size: 80%;
+   position: absolute;
+   left: 520px;
+   top: 360px;
+   width: 120px;
+}
+.datum_valute-opis {
+   position: absolute;
+   left: 520px;
+   top: 370px;
+   margin: 0;
+   padding: 0;
+   width: 170px;
+   border-top: 1px solid red;
+}
+.hitno {
+   position: absolute;
+   left: 822px;
+   top: 350px;
+   width: 22px;
+   height: 22px;
+   padding: 5px 0 0 5px;
+   border: 1px solid red;
+}
+.hitno-opis {
+   position: absolute;
+   left: 818px;
+   top: 376px;
+   margin: 0;
+   padding: 0;
+   width: 100px;
+}
+.obrazac3-opis {
+   font-size: 80%;
+   position: absolute;
+   left: 440px;
+   bottom: 4px;
+   margin: 0;
+   padding: 0;
+   width: 170px;
+}
+form {
+   /* display: none; */
+   border: 1px solid #ccc;
+   border-radius: 7px;
+   margin: 20px 50px 20px 30px;
+   padding: 20px;
+}
+@media print {
+   body {margin-top:0 !important;}
+   
+   h3, h4 {
+      display: none;
+   }
+   div.virman {
+      width: 95%;
+      margin: 0 auto;
+      page-break-inside: avoid;
+      /* margin-bottom: 20px; */
+      border-bottom: none;
+   }
+   div.virman:nth-child(3n+0) { margin-bottom: 25px; }
+   div.virman:nth-child(3n+1) { margin-bottom: 25px; }
+   form {
+      display: none;
+   }
+
+   .nalog-opis { visibility: hidden; }
+   .duznik-opis { visibility: hidden; }
+   .svrha-opis { visibility: hidden; }
+   .poverilac-opis { visibility: hidden; }
+   .pecat_potpis { visibility: hidden; }
+   .mesto_datum-opis { visibility: hidden; }
+   .sifra_placanja-opis { visibility: hidden; }
+   .valuta-opis { visibility: hidden; }
+   .iznos-opis { visibility: hidden; }
+   .racun_duznika-opis { visibility: hidden; }
+   .broj_modela1-opis { visibility: hidden; }
+   .poziv_na_broj1-opis { visibility: hidden; }
+   .racun_poverioca-opis { visibility: hidden; }
+   .broj_modela2-opis { visibility: hidden; }
+   .poziv_na_broj2-opis { visibility: hidden; }
+   .datum_valute { visibility: hidden; }
+   .datum_valute-opis { visibility: hidden; }
+   .hitno { visibility: hidden; }
+   .hitno-opis { visibility: hidden; }
+   .obrazac3-opis { visibility: hidden; }
+   
+   /* Naredna podesavanja su za EPSON LX350 - testirano u JPI */
+   .duznik { border: none; left: 20px; top: 47px; }
+   .svrha { border: none; left: 20px; top: 143px; }
+   .poverilac { border: none; left: 20px; top: 237px; }
+   .mesto_datum { border: none; left: 220px; top: 343px; }
+   .sifra_placanja { border: none; left: 520px; top: 68px; }
+   .valuta { border: none; left: 600px; top: 68px; }
+   .iznos { border: none; left: 700px; top: 67px; }
+   .racun_duznika { border: none; }
+   .broj_modela1 { border: none; }
+   .poziv_na_broj1 { border: none; }
+   .racun_poverioca { border: none; }
+   .broj_modela2 { border: none; }
+   .poziv_na_broj2 { border: none; }
+
+/* Naredna podesavanja su za EPSON LX 300+II - testirano u kod CICA */
+/*
+   .duznik { border: none; left: 5px; top: 47px; }
+   .svrha { border: none; left: 5px; top: 143px; }
+   .poverilac { border: none; left: 20px; top: 247px; }
+   .mesto_datum { border: none; left: 200px; top: 353px; }
+   .sifra_placanja { border: none; left: 500px; top: 68px; }
+   .valuta { border: none; left: 580px; top: 68px; }
+   .iznos { border: none; left: 700px; top: 66px; }
+   .racun_duznika { border: none; left: 600px; top: 123px;}
+   .broj_modela1 { border: none; left: 500px; top: 180px;}
+   .poziv_na_broj1 { border: none; }
+   .racun_poverioca { border: none; }
+   .broj_modela2 { border: none; left: 500px; top: 298px;}
+   .poziv_na_broj2 { border: none; }
+*/
+}

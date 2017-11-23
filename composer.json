@@ -1,0 +1,12 @@
+{
+    "name": "ivan-petrovic/obrzar",
+    "description": "Aplikacija za obracun zarada",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Petrovic",
+            "email": "mangan77@gmail.com"
+        }
+    ],
+    "require": {}
+}

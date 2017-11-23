@@ -1,0 +1,20 @@
+/* obustave po radnjama */
+table.lista-shop {
+   width: 70%;
+}
+table.lista-shop th {
+   text-align: center;
+}   
+table.lista-shop th:first-child {
+   width: 40%;
+}
+table.lista-shop th:last-child {
+   width: 20%;
+}   
+table.lista-shop td:first-child {
+   text-align: left;
+}   
+table.lista-shop td:last-child {
+   text-align: right;
+}
+/* kraj obustave po radnjama */

@@ -1,0 +1,152 @@
+html, body, h1, h2, h3, ul, li, a, p {
+   margin: 0;
+   padding: 0;
+}
+html {
+   background: #eee;
+}
+body {
+   width: 961px;
+   margin: 0 auto;
+   margin-top: 1em;
+   background: white;
+   font: 1em Arial, Helvetica, sans-serif;
+   border-radius: 7px;
+}
+/* header of page */
+header {
+   border-bottom: 2px solid black;
+   padding: .5em;
+}
+/* navigation of page */
+nav {
+   background: #fafafa;
+/*   border-right: 1px solid black; */
+   overflow: hidden;
+   line-height: 1.5em;
+}
+nav li {
+   float: left;
+   list-style: none;
+   width: 119px;
+   border-left: 1px solid black;
+}
+nav a {
+   color: black;
+   display: block;
+   padding: .5em;
+   text-decoration: none;
+   text-align: center;
+   border-bottom: 2px solid #fafafa;   
+}
+nav li a.menu-active {
+   background: #eee;
+   border-bottom: 2px solid #eee;
+}
+nav a:hover {
+   background: #ddd;
+   border-bottom: 2px solid black;
+   font-weight: bold;
+}
+nav a.menu-active:hover {
+   border-bottom: 2px solid black;
+}
+/* content of page */
+section {
+   overflow: auto;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+/* content off page - article */
+article h3 {
+   padding-top: 1em;
+   padding-left: 1em;
+}
+article p {
+   padding-top: 1em;
+   padding-left: 1em;
+}
+article ul {
+   padding-top: 1em;
+   padding-left: 2em;
+}
+article li {
+   list-style: none;
+}
+article a {
+   text-align: left;
+   border: none;
+   text-decoration: underline;
+}
+/* back to button styling */
+p.button {
+   clear: right;
+   float: left;
+   margin: 0;
+   padding: 0;
+}
+p.button a {
+   color: black;
+   display: block;
+   padding: .5em;
+   text-decoration: none;
+   text-align: center;
+   border-bottom: 2px solid white;   
+}
+p.button a {
+   border: 1px solid black;
+   border-radius: 7px;
+   width: 140px;
+   margin: 0 .5em .5em 15px;
+   padding: 3px;
+   line-height: 1.5em;
+   text-align: center;
+   text-decoration: none;
+}
+p.button a:hover {
+   font-weight: bold;
+   background: #ddd;
+}
+table.izmena-rate input {
+   width: 15em;
+}
+table.izmena-rate select {
+   width: 10em;
+}
+/* footer of page */
+footer {
+   clear: both;
+   height: 2em;
+   padding: .5em;
+   text-align: center;   
+}
+/* razno */
+hr {
+   clear: both;
+}
+@media print {
+   header {
+      display: none;
+   }
+   nav {
+      display: none;
+   }
+   footer {
+      display: none;
+   }
+   p.button {
+      display: none;
+   }
+   div.listic {
+      page-break-inside: avoid;
+   }
+   /*
+   hr {
+      display: none;
+   }
+   */
+   section {
+      border-top: none;
+      border-bottom: none;
+   }
+}

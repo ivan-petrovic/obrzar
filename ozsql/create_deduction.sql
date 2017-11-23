@@ -1,0 +1,11 @@
+# Napravi tabelu obustava za obracun zarade
+
+DROP TABLE IF EXISTS deduction;
+
+CREATE TABLE deduction (
+   id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+   zaposleniID SMALLINT UNSIGNED NOT NULL,
+   radnjaID SMALLINT UNSIGNED NOT NULL,
+   tipObustave SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+   PRIMARY KEY (id)
+);

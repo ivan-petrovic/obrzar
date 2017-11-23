@@ -1,0 +1,223 @@
+div.virman0, div.virman1, div.virman2 {
+   margin: 0 auto;
+   padding: 0;
+   position: relative;
+   width: 950px;
+   height: 460px;
+   background-image:url('nalog01.jpg');
+   background-size: 100%;
+}
+.duznik {
+   position: absolute;
+   left: 20px;
+   top: 55px;
+   width: 300px;
+}
+.svrha {
+   position: absolute;
+   left: 20px;
+   top: 160px;
+   width: 300px;
+}
+.poverilac {
+   position: absolute;
+   left: 20px;
+   top: 250px;
+   width: 300px;
+}
+.mesto_datum {
+   font-size: 80%;
+   position: absolute;
+   left: 190px;
+   top: 360px;
+   width: 200px;
+}
+.sifra_placanja {
+   position: absolute;
+   left: 520px;
+   top: 75px;
+   width: 35px;
+}
+.valuta {
+   position: absolute;
+   left: 590px;
+   top: 75px;
+   width: 35px;
+}
+.iznos {
+   position: absolute;
+   left: 750px;
+   top: 75px;
+   width: 170px;
+}
+.racun_duznika {
+   position: absolute;
+   left: 620px;
+   top: 135px;
+   width: 250px;
+}
+.broj_modela1 {
+   position: absolute;
+   left: 520px;
+   top: 195px;
+   width: 35px;
+}
+.poziv_na_broj1 {
+   position: absolute;
+   left: 620px;
+   top: 195px;
+   width: 250px;
+}
+.racun_poverioca {
+   position: absolute;
+   left: 620px;
+   top: 250px;
+   width: 250px;
+}
+.broj_modela2 {
+   position: absolute;
+   left: 520px;
+   top: 310px;
+   width: 35px;
+}
+.poziv_na_broj2 {
+   position: absolute;
+   left: 620px;
+   top: 310px;
+   width: 250px;
+}
+.datum_valute {
+   font-size: 80%;
+   position: absolute;
+   left: 520px;
+   top: 360px;
+   width: 120px;
+}
+.hitno {
+   position: absolute;
+   left: 817px;
+   top: 360px;
+   width: 15px;
+}
+@media print {
+   h3, h4 {
+      display: none;
+   }
+   div.virman0 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      height: 27.7em;
+      /* page-break-inside: avoid; */
+   }
+   div.virman1 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      height: 28.5em;
+      /* page-break-inside: avoid; */
+   }
+   div.virman2 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      height: 28.3em;
+      /* page-break-inside: avoid; */
+      /* page-break-after: always; */
+   }
+   .duznik {
+      position: absolute;
+      left: 3em;
+      top: -1em;
+      width: 20em;
+   }
+   .svrha {
+      position: absolute;
+      left: 3em;
+      top: 5em;
+      width: 20em;
+   }
+   .poverilac {
+      position: absolute;
+      left: 3em;
+      top: 10em;
+      width: 20em;
+   }
+   .mesto_datum {
+      font-size: 80%;
+      position: absolute;
+      left: 20em;
+      top: 20.5em;
+      width: 20em;
+   }
+   .sifra_placanja {
+      position: absolute;
+      left: 31.5em;
+      top: 0;
+      width: 35px;
+   }
+   .valuta {
+      position: absolute;
+      left: 36em;
+      top: 0em;
+      width: 35px;
+   }
+   .iznos {
+      position: absolute;
+      left: 46em;
+      top: 0em;
+      width: 170px;
+   }
+   .racun_duznika {
+      position: absolute;
+      left: 36.5em;
+      top: 3.5em;
+      width: 250px;
+   }
+   .broj_modela1 {
+      position: absolute;
+      left: 31.5em;
+      top: 7em;
+      width: 35px;
+   }
+   .poziv_na_broj1 {
+      position: absolute;
+      left: 36.5em;
+      top: 7em;
+      width: 250px;
+   }
+   .racun_poverioca {
+      position: absolute;
+      left: 36.5em;
+      top: 10em;
+      width: 250px;
+   }
+   .broj_modela2 {
+      position: absolute;
+      left: 31.5em;
+      top: 14em;
+      width: 35px;
+   }
+   .poziv_na_broj2 {
+      position: absolute;
+      left: 36.5em;
+      top: 14em;
+      width: 250px;
+   }
+   .datum_valute {
+      font-size: 80%;
+      position: absolute;
+      left: 31.5em;
+      top: 18em;
+      width: 120px;
+   }
+   .hitno {
+      position: absolute;
+      left: 36.5em;
+      top: 18em;
+      width: 15px;
+   }
+}
