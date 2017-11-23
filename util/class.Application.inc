@@ -106,7 +106,7 @@ class Application {
       // return "cepbep:8081;
       // return "localhost";
       // return "st3";
-       return "https://quiet-sierra-71458.herokuapp.com/";
+       return "https://quiet-sierra-71458.herokuapp.com";
    }
 
    static public function getOp() {
