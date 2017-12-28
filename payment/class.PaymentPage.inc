@@ -36,6 +36,13 @@ class PaymentPage extends CommonPage {
       $ref = "payment.php?opID=" . PaymentPageDispatcher::NEW_PAYMENT;
       return $this->button($ref, "Нови");
    }
+   
+    protected function newButtonGore() {
+      $ref = "payment.php?opID=" . PaymentPageDispatcher::NEW_PAYMENT;
+      $output  = str_repeat("\t", self::$indent+2);
+      $output .= "<p><a href=\"{$ref}\">Нови</a></p>\n";
+      return $output;
+    }
 
    protected function updateButton() {
       $ref = "payment.php?opID=" . PaymentPageDispatcher::UPDATE_PAYMENT . "&paymentID=" . $this->pid;

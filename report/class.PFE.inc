@@ -158,24 +158,33 @@ class Zarade {
     * @return float
     */
    public function calcVrednostSata() {
-       if($this->payment->getValue('tipObracuna') === 'Akontacija') {
+       // ovaj if je dodat za 2018 godinu, u else je racunanje za predhodne godine
+        if($this->payment->getValue('godina') >= 2018) {
             if ($this->karnet->getValue('tipCenaRada') === 1) {
-               // bruto
-               return round($this->karnet->getValue('cenaRada') * $this->karnet->getValue('koeficijent') /
-                       $this->payment->getValue('satiUMesecu'), 5);
+               return $this->karnet->getValue('cenaRada') * $this->karnet->getValue('koeficijent') / $this->payment->getValue('satiUMesecu'); // bruto
             } else {
-               // neto
-               return round($this->calcVrSataNaNetoCenuRada(), 5);
+               return $this->calcVrSataNaNetoCenuRada();  // neto
             }
-       }
-      if ($this->karnet->getValue('tipCenaRada') === 1) {
-         // bruto
-         return round($this->karnet->getValue('cenaRada') * $this->karnet->getValue('koeficijent') /
-                 $this->payment->getValue('satiUMesecu'), 2);
-      } else {
-         // neto
-         return round($this->calcVrSataNaNetoCenuRada(), 2);
-      }
+        } else {
+            if($this->payment->getValue('tipObracuna') === 'Akontacija') {
+                 if ($this->karnet->getValue('tipCenaRada') === 1) {
+                    // bruto
+                    return round($this->karnet->getValue('cenaRada') * $this->karnet->getValue('koeficijent') /
+                            $this->payment->getValue('satiUMesecu'), 5);
+                 } else {
+                    // neto
+                    return round($this->calcVrSataNaNetoCenuRada(), 5);
+                 }
+            }
+            if ($this->karnet->getValue('tipCenaRada') === 1) {
+              // bruto
+              return round($this->karnet->getValue('cenaRada') * $this->karnet->getValue('koeficijent') /
+                      $this->payment->getValue('satiUMesecu'), 2);
+            } else {
+              // neto
+              return round($this->calcVrSataNaNetoCenuRada(), 2);
+            }
+        }
    }
 
    protected function calcVrSataNaNetoCenuRada() {

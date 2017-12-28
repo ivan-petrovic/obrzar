@@ -19,6 +19,7 @@ class PaymentList extends PaymentPage implements RenderHTML {
       if( count($nizObracuna) === 0) {
          echo str_repeat("\t", self::$indent+2) . "<p>Нема унетих обрачуна.</p>\n";
       } else {
+         echo $this->newButtonGore();
          echo $this->renderList($nizObracuna);
       }
       echo $this->newButton();
